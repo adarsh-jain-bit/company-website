@@ -13,10 +13,13 @@ import { Service } from './components/section/Service'
 import Carrer from './components/Carrer'
 import { WorkWith } from './components/section/WorkWith'
 import Certificate from './components/section/Certicate'
+import { CustomCursor } from './layout/Cursor'
 function App() {
   return (
     <>
+    <CustomCursor/>
         <Header />
+      
       <div className="container relative">
         <BGMotion>
           <div className="hero max-w-[1280px] mx-auto space-y-16 px-4">
@@ -30,6 +33,7 @@ function App() {
             <Portfolio />
             {/* <WorkWith/> */}
             <Carrer />
+           
           </div>
         </BGMotion>
         <div className="hero max-w-[1280px] mx-auto space-y-16 
