@@ -6,7 +6,7 @@ const About = () => {
     <section className="text-white p-4  rounded-lg md:max-w-7xl mx-auto flex flex-col md:flex-row w-full  gap-8" id="about">
     <div className="w-full md:w-1/2 overflow-hidden rounded-lg ">
       <img 
-        src="/public/about4.jpg" 
+        src="/public/assets/about4.jpg" 
         alt="Teamwork Image" 
         className="w-full  rounded-lg md:h-[540px] h-[300px] object-cover transition-transform duration-500 transform hover:scale-105"
       />
