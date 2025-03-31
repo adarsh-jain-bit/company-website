@@ -1,12 +1,12 @@
 import React from 'react'
 import { StarBorder } from "@/components/ui/star-border"
-
+import AboutImg from  "../assets/about4.jpg"
 const About = () => {
   return (
     <section className="text-white p-4  rounded-lg md:max-w-7xl mx-auto flex flex-col md:flex-row w-full  gap-8" id="about">
     <div className="w-full md:w-1/2 overflow-hidden rounded-lg ">
       <img 
-        src="/public/assets/about4.jpg" 
+        src={AboutImg} 
         alt="Teamwork Image" 
         className="w-full  rounded-lg md:h-[540px] h-[300px] object-cover transition-transform duration-500 transform hover:scale-105"
       />
