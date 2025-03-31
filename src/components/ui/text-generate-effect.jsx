@@ -28,7 +28,7 @@ export const TextGenerateEffect = ({
         {/* ✅ Apply gradient to the entire text container */}
         <motion.div
           ref={scope}
-          className="bg-gradient-to-r from-purple-500 via-blue-200 to-green-400 text-transparent bg-clip-text text-xl leading-snug tracking-wide"
+          className="bg-gradient-to-r from-purple-500 via-blue-200 to-green-400 text-transparent bg-clip-text md:text-xl text-sm leading-snug tracking-wide"
         >
           {wordsArray.map((word, idx) => (
             <motion.span

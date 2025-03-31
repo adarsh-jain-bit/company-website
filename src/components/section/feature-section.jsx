@@ -35,7 +35,7 @@ export function FeatureSteps({
       textClassName="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-center"
     
     />
-<p className="text-md font-medium text-muted-foreground sm:text-xl mb-10 text-center" >We are a passionate team of developers who believe in <br/>the power of creativity.
+<p className="text-md font-medium text-muted-foreground sm:text-xl mb-10 text-center"id="product" >We are a passionate team of developers who believe in <br/>the power of creativity.
 </p>
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10 ">

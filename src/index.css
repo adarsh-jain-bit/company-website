@@ -149,3 +149,9 @@
 .parent-container-portfolio {
   width: 100%;
 }
+body, html {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}

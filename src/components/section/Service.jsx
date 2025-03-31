@@ -8,15 +8,16 @@ export function Service() {
     <>
       <AnimatedText 
         text="Our Services"
-        textClassName="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-center"
+        textClassName="text-3xl md:text-4xl lg:text-5xl font-bold md:mb-5 mb-0 text-center"
+
       />
-      <p className="text-md font-medium text-muted-foreground sm:text-xl mb-10 text-center">
+      <p className="text-md font-medium text-muted-foreground sm:text-xl mb-10 text-center" id="service">
         Empowering businesses with cutting-edge technology. Our expert team delivers 
         tailored solutions to transform your ideas into reality, ensuring innovation, efficiency, 
         and scalability.
       </p>
 
-      <ul className="grid grid-cols-1 gap-10 md:grid-cols-6 xl:grid-cols-12 xl:grid-rows-2">
+      <ul className="grid grid-cols-2 md:gap-10 gap-4 md:grid-cols-6 xl:grid-cols-12 xl:grid-rows-2">
         <GridItem
           area="md:col-span-3 xl:col-span-4 xl:row-span-1"
           icon={<Code className="h-6 w-6" />}
@@ -60,7 +61,7 @@ export function Service() {
 
 const GridItem = ({ area, icon, title, description }) => {
   return (
-    <li className={cn("min-h-[14rem] list-none", area)}>
+    <li className={cn("min-h-[14rem] list-none", area)} >
       <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
         <GlowingEffect
           spread={40}
@@ -70,9 +71,9 @@ const GridItem = ({ area, icon, title, description }) => {
           inactiveZone={0.01}
           borderWidth={3}
         />
-        <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-[0.75px] bg-background p-6 shadow-sm dark:shadow-[0px_0px_27px_0px_rgba(45,45,45,0.3)] md:p-6">
+        <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-[0.75px] bg-background p-6 shadow-sm dark:shadow-[0px_0px_27px_0px_rgba(45,45,45,0.3)] md:p-6 md:text-left text-center md:items-start items-center">
           <div className="relative flex flex-1 flex-col justify-between gap-3">
-            <div className="w-fit rounded-lg border-[0.75px] border-border bg-muted p-2">
+            <div className="w-fit rounded-lg border-[0.75px] border-border bg-muted p-2 ">
               {icon}
             </div>
             <div className="space-y-3">

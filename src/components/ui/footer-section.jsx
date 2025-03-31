@@ -59,7 +59,7 @@ function Footerdemo() {
 
   return (
     <footer
-      className="relative border-t bg-background text-foreground transition-colors duration-300 mt-20">
+      className="relative border-t bg-background text-foreground transition-colors duration-300 md:p-0 px-4">
       <div className=" mx-auto py-12">
         <div className="grid gap-12 md:grid-cols-1 lg:grid-cols-5">
           <div className="relative md:col-span-2">
@@ -71,7 +71,7 @@ function Footerdemo() {
             We are a passionate team at Scale Us, dedicated to empowering individuals and businesses through creative digital solutions. We specialize in creating compelling online presences that showcase your work and convey your unique story.
             </p>
             <div className="relative">
-            <h3 className="mb-4 text-lg font-semibold text-left">Follow Us</h3>
+            <h3 className="mb-4 text-lg font-semibold ">Follow Us</h3>
             <div className="mb-4 flex space-x-4 items-center ">
             {socialLinks.map(({ name, icon: Icon, url }, index) => (
   <TooltipProvider key={index}>
@@ -93,27 +93,25 @@ function Footerdemo() {
             </div>
           </div>
           </div>
-          {footerLinks.map((section, index) => (
-          <div key={index} className="lg:col-span-1">
-            <h3 className="mb-4 text-xl font-semibold">{section.title}</h3>
-            <nav className="space-y-2 text-lg">
-              {section.links.map((link, i) => (
-             
-                  <a
-                  key={i}
-                  href={link.url}
-                 className="block cursor-pointer text-sm font-semibold px-4 py-2 rounded-lg transition-colors hover:text-primary hover:bg-muted text-primary"
-                >
-                  {link.name}
-                </a>
-        
-              ))}
-            </nav>
+
+          <div className="grid grid-cols-3 sm:grid-cols-3 md:gap-6 gap-1 lg:col-span-3 justify-center text-center">
+            {footerLinks.map((section, index) => (
+              <div key={index} className={`Section-${index}`}>
+                <h3 className="mb-4 md:text-xl font-semibold text-center text-lg md:h-auto h-[50px]">{section.title}</h3>
+                <nav className="space-y-2 md:text-lg text-center text-sm">
+                  {section.links.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link.url}
+                      className="block cursor-pointer text-sm md:font-semibold font-normal md:px-4 px-2 py-2 rounded-lg transition-colors hover:text-primary hover:bg-muted text-primary"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            ))}
           </div>
-        ))}
-
-
-
         </div>
         <div
           className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">

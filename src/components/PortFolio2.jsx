@@ -9,7 +9,7 @@ export default function PortFolio2() {
       title: "Web Development",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8" id="portfolio"> 
           <TextGenerateEffect duration={2} filter={false} words={"Building robust and scalable web applications tailored to your business needs. From corporate websites to full-stack SaaS solutions, we create experiences that engage users."} />
             
           </p>

@@ -66,22 +66,22 @@ const items = [
 
 function Career() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" id="carrer">
       <AnimatedText 
         text="Build Your Web Development Career"
-        textClassName="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-center"
+        textClassName="text-3xl md:text-4xl lg:text-5xl  font-bold md:mb-5 mb-0 text-center"
       />
-      <p className="text-md font-medium text-muted-foreground sm:text-xl mb-10 text-center">
+      <p className="text-md font-medium text-muted-foreground sm:text-lg text-sm mb-10 text-center">
         The world of web development is constantly evolving. <br />
         Explore exciting career opportunities and learn how to grow as a developer.
       </p>
 
-      <div className="flex justify-center items-center w-full h-full">
-        <div className="hello w-[50%]">
+      <div className="flex justify-center items-center w-full h-full md:flex-row flex-col gap-10 md:gap-0">
+        <div className="hello md:w-[50%] ">
           <AnimatedLogo />
         </div>
 
-        <div className="breakwrapper2 w-[50%]">
+        <div className="breakwrapper2 md:w-[50%] md:px-2 px-4">
           <Accordion type="single" collapsible className="w-full" defaultValue="1">
             {items.map((item) => (
               <AccordionItem value={item.id} key={item.id} className="py-2">

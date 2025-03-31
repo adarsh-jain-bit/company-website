@@ -37,6 +37,7 @@ export function Features() {
         title="4 Steps to Brand Brilliance"
         autoPlayInterval={3000}
         imageHeight="h-[700px]"
+      
       />
   )
 }

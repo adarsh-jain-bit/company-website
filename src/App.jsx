@@ -16,10 +16,10 @@ import Certificate from './components/section/Certicate'
 function App() {
   return (
     <>
-      <div className="container relative">
         <Header />
+      <div className="container relative">
         <BGMotion>
-          <div className="hero w-[1280px] m-auto space-y-16">
+          <div className="hero max-w-[1280px] mx-auto space-y-16 px-4">
             <HeroSection />
             <Certificate/>
             <About />
@@ -32,8 +32,13 @@ function App() {
             <Carrer />
           </div>
         </BGMotion>
-      </div>
+        <div className="hero max-w-[1280px] mx-auto space-y-16 
+        ">
+
       <Footer />
+
+        </div>
+      </div>
     </>
   );
 }

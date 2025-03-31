@@ -41,7 +41,7 @@ export const Timeline = ({ data }) => {
         Take a look at some of our recent creative portfolio works.
       </p>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-10">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-10 md:overflow-auto overflow-hidden">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-10">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">

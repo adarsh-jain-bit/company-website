@@ -30,7 +30,7 @@ function Case() {
   useEffect(() => {
     if (!scrollRef.current) return;
 
-    let speed = 1; // Adjust speed for smooth scrolling
+    let speed = 5; // Adjust speed for smooth scrolling
     let position = 0;
     let requestId;
 
@@ -51,16 +51,16 @@ function Case() {
   }, [isHovered]); // Added dependency here
 
   return (
-    <div className="w-full py-10 lg:py-10">
+    <div className="w-full py-0 lg:py-10">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
           {/* Animated Heading */}
-          <div className=" w-[570px]">
+          <div className=" md:w-[570px] w-full">
             <AnimatedText 
               text="Trusted by thousands of businesses worldwide" 
               textClassName="text-lg md:text-xl lg:text-2xl font-bold 
-             text-left"
-              className="text-left"
+             md:text-left text-center"
+              
             />
           </div>
 

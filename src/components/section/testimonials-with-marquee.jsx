@@ -3,7 +3,7 @@ import { AnimatedText } from "../ui/animated-shiny-text";
 
 export function TestimonialsSection({ title, description, testimonials }) {
   return (
-    <section className=" text-foreground py-8 sm:py-10 md:py-10">
+    <section className=" text-foreground py-2 sm:py-10 md:py-10">
       <div className="mx-auto max-w-container flex flex-col items-center text-center">
          <AnimatedText
               text={title} 
