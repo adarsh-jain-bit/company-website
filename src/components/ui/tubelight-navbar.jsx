@@ -120,7 +120,7 @@ export function NavBar({ items, className }) {
             </div>
 
             <div className=" flex flex-col gap-4 p-6">
-              
+            <ThemeToggle />
               <button className="w-full px-5 py-2 bg-purple-700 text-white rounded-lg hover:bg-primary/90 transition">
                 Get In Touch
               </button>
